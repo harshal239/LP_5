@@ -1,0 +1,59 @@
+sudo apt-get remove openjdk*
+java -version
+sudo apt update
+sudo apt install openjdk-8-jdk openjdk-8-jre
+
+ass1: thread client/server ps(1)
+javac *.java
+rmic AddServerImpl
+rmiregistry
+java AddServer 
+java AddClient 127.0.0.1 8 4
+
+
+Client Server Socket : Ps(2)
+javac *.java
+java server
+java client 
+type>>"hello"
+(basically chatting from both ends Client and Server)
+
+
+ass2: CORBA ps(3,4)
+idlj -fall ReverseModeule.idl
+javac *.java REverseModule/*.java
+orbd -ORBInitialPort 1056&
+java ReverseServer -ORBInitialPort 1056&
+java RevrerseClient -ORBInitialPort 1056
+
+
+ass3: MPI/MPJ Jar wala ps(5)
+search > dwnld mpj express > select first site >select  MPJ Express Software
+export MPJ_HOME=/path-to-mpj/
+export PATH=MPJ_HOME/bin:$PATH
+javac -cp $MPJ_HOME/lib/mpj.jar arrSum.java
+$MPJ_HOME/bin/mpjrun.sh -np 4 arrSum
+
+
+ass4:Berkeley : Clock sync ps(6)
+javac *.java
+java Server 
+java Client 
+
+
+ass5: Token Ring : ps(7)
+javac *.java
+java filename
+
+
+ass6: Bully & Ring ps(8)
+javac *.java
+java Bully 
+inp=> 2, 5, 3, 2
+
+java Ring
+inp=> 3, 5 6 8, 1, 2
+
+
+ass7: Netbeans/Web Services ps(9)
+BHAGWAN BHAROSE
