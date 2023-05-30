@@ -57,3 +57,12 @@ inp=> 3, 5 6 8, 1, 2
 
 ass7: Netbeans/Web Services ps(9)
 BHAGWAN BHAROSE
+
+
+
+//Command to delete previous all cmd from terminal
+history -d
+
+//If CORBA port error
+lsof -i tcp:1050 
+kill -9 <pid>
